@@ -22,12 +22,15 @@ notebooks/
     03_high_dimensions.ipynb   Part 3: grids against Monte Carlo as the dimension grows
     04_basket_extension.ipynb  Part 4: basket options on many correlated stocks
 figures/                  every figure, saved by the notebooks
+report/
+    main.tex              LaTeX source of the project report
+    main.pdf              the compiled report
 tests/test_pricing.py     checks of every method against known answers
 ```
 
 **Running the code**
 
-Install the dependencies with `pip install -r requirements.txt`. Run the tests from the top folder with `pytest`, which takes a few seconds. Then run the notebooks in order. Each one runs in well under a minute on a laptop and regenerates its figures, and every random number comes from a seeded generator, so the results are reproducible.
+Install the dependencies with `pip install -r requirements.txt`. Run the tests from the top folder with `pytest`, which takes a few seconds. Then run the notebooks in order. Each one runs in well under a minute on a laptop and regenerates its figures, and every random number comes from a seeded generator, so the results are reproducible. The report in `report/main.pdf` is written up from the notebooks. To rebuild it, compile `report/main.tex` with any LaTeX distribution, for example `tectonic main.tex` from inside the `report` folder, or upload the repository to Overleaf. It reads its figures from the `figures` folder.
 
 **Main results**
 
